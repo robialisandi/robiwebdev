@@ -19,7 +19,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #050505;
+  /* background-color: #050505; */
+  background-color: #0e1217;
   color: white;
   min-height: 100vh;
   @apply antialiased;
@@ -29,27 +30,31 @@ main {
   margin: 0 auto;
 }
 
+.navbar a {
+  color: #888888;
+}
+
 h1 {
   font-weight: 800;
+  line-height: 67px;
 }
 
 p,
 span {
   font-weight: 400;
 }
+
 p {
   color: #888888;
 }
 
 a {
-  text-decoration: underline !important;
-  text-decoration-color: #ff00c7 !important;
+  text-decoration: none !important;
   text-decoration-thickness: 1px !important;
   transition: 100ms;
 }
 
 a:hover {
-  background-color: #ff00c7 !important;
-  color: #212121 !important;
+  color: #fff !important;
   transition: 100ms;
 }
