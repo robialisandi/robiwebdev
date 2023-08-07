@@ -5,24 +5,42 @@ const projects = [
   {
     title: 'Service Booking Application',
     description:
-      'Built with flutter to accommodate booking queue services provided by merchants for customers such as barber services, buildings, workshops, clinics, sports centers, wedding vendors, restaurants'
+      'Built with flutter to accommodate booking queue services provided by merchants for customers such as barber services, buildings, workshops, clinics, sports centers, wedding vendors, restaurants',
+    icon: 'Salleri'
   },
   {
     title: 'Sellery POS System',
     description:
       'Selleri POS using react native builds for small and mid-sized businesses to make it easier to manage and control their businesses whenever and wherever.',
-    link: 'https://www.selleri.co.id/'
+    link: 'https://www.selleri.co.id/',
+    icon: 'Salleri2'
   },
   {
     title: 'Seed Management System',
     description:
       'Web based using laravel, such as to know the age of plant seeds, treatment schedules and distribution. POS system to manage seed stock, income and accounts payable.',
-    link: 'https://www.asepbibit.com/'
+    link: 'https://www.asepbibit.com/',
+    icon: 'Seed'
   },
   {
     title: 'Corporate Information System',
     description:
-      'Web based application to manage schedule daily meeting top management and every corporate event, also handling lobbying activities record.'
+      'Web based application to manage schedule daily meeting top management and every corporate event, also handling lobbying activities record.',
+    icon: 'Kanban'
+  },
+  {
+    title: 'Arisan App',
+    description:
+      'Web based application to manage schedule daily meeting top management and every corporate event, also handling lobbying activities record.',
+    link: 'https://github.com/robialisandi/Arisan-app',
+    icon: 'Arisan'
+  },
+  {
+    title: 'Menfess Twitter Base',
+    description:
+      'Web based application to manage schedule daily meeting top management and every corporate event, also handling lobbying activities record.',
+    link: 'https://twitter.com/garutfess',
+    icon: 'Arisan'
   }
 ]
 ---
@@ -32,7 +50,11 @@ const projects = [
     <h2 class="!leading-140 text-3xl font-semibold tracking-tight md:font-bold 2xl:text-4xl">Projects</h2>
     <span class="mt-3 block italic text-[#888888]">List of projects that I am proud of</span>
     <div class="mt-6 grid grid-cols-3 gap-10">
-      {projects.map((post) => <ItemProject link={post.link} title={post.title} description={post.description} />)}
+      {
+        projects.map((post) => (
+          <ItemProject icon={post.icon} link={post.link} title={post.title} description={post.description} />
+        ))
+      }
     </div>
   </div>
 </section>

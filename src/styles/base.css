@@ -49,12 +49,12 @@ p {
 }
 
 a {
-  text-decoration: none !important;
-  text-decoration-thickness: 1px !important;
+  text-decoration: none;
+  text-decoration-thickness: 1px;
   transition: 100ms;
 }
 
 a:hover {
-  color: #fff !important;
+  color: #fff;
   transition: 100ms;
 }

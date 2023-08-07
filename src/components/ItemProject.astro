@@ -1,16 +1,28 @@
 ---
+import Icon from '@/icon/Icon.astro'
+
 type Props = {
   title?: string
-  description?: string,
+  description?: string
   link?: string
+  icon?: string
 }
 
-const { link, title, description } = Astro.props
+const { link, title, description, icon } = Astro.props
 ---
 
-<a href={link} class="text-white" target="_blank">
-  <h3 class="text-lg mb-2">{title}</h3>
-  <p class="text-sm line-clamp-2">
-    {description}
-  </p>
+<a
+  href={link}
+  class="text-white flex items-center justify-center opacity-60 transition duration-200 ease-out hover:opacity-100"
+  target="_blank"
+>
+  <div class="w-10 opacity-40">
+    <Icon icon={icon} />
+  </div>
+  <div class="ml-5 flex-1">
+    <h3 class="mb-2 text-lg">{title}</h3>
+    <p class="text-sm line-clamp-2">
+      {description}
+    </p>
+  </div>
 </a>
