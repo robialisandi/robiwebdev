@@ -7,7 +7,7 @@ type Props = {
 const { title, image } = Astro.props
 ---
 
-<a href="" class="text-white rounded-md bg-black-secondary p-3">
+<a href="" class="rounded-md bg-[#f0f0f0] p-3 text-black-secondary dark:bg-black-secondary dark:text-white">
   <div class="flex items-center justify-center">
     <img src={`/images/${image}.png`} alt="" class="w-5" />
     <h3 class="ml-2 text-lg">{title}</h3>
